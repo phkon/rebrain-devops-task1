@@ -1,0 +1,17 @@
+git config user.name "Phillip Konovalov"
+git config --global user.email "phillip.konovalov@innowise-group.com"
+git checkout -b develop
+git checkout -b GIT
+mkdir rebrain-devops-task1
+cd .\rebrain-devops-task1
+git init
+Get-Content C:\nginx-1.23.2\conf\nginx.conf | Out-File nginx.conf
+"В репозитории содержится файл конфигурации nginx.conf для ОС Microsoft Windows" | Out-File README.md
+git add .\README.md
+git commit -a -m "Add README.md file"
+git add .\nginx.conf
+git log
+cd ..
+git add .\log
+git add .\todo
+git commit -a -m "Add log & todo files"
